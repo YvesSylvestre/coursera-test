@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html ng-app='LunchCheck'>
+  <head>
+    <meta charset="utf-8">
+    <script src="angular.min.js"></script>
+    <script src="LunchCheck.js"></script>
+    <title>Dietary check in Javascript
+           (and AngularJS)</title>
+  </head>
+  <body>
+    <h1>Please enter comma separated list of what you usually eat for lunch</h1>
+    <div ng-controller='LunchCheckController'>
+      <input type="text" ng-model="diet" ng-focus="clearMes()">
+      <button ng-click="checkDiet()">Check If Too Much</button>
+      <br>{{mes}}
+    </div>
+  </body>
+</html>
